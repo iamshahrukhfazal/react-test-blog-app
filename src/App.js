@@ -3,9 +3,7 @@ import './App.css';
 import {Nav} from "./components/nav"
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'  
-import {ShowPost} from "./pages/postShow"
-import {PostPage} from "./pages/postsPage"
-import PostState from "./context/PostState"
+
 function App() {           
  
  
@@ -22,8 +20,6 @@ function App() {
               <Routes>
                 <Route path="/" element={<PostPage/>}/>
                 <Route path="/posts/:id" element={<ShowPost/>}>
-           
-
               </Route>
             </ Routes>
             </div>
